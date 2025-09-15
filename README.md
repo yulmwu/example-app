@@ -1,3 +1,21 @@
+# Docker Image Build
+
+```shell
+# platform: linux/amd64
+docker build --platform linux/amd64 -t demo:latest .
+# platform: linux/arm64
+docker build --platform linux/arm64 -t demo:arm .
+```
+
+# Docker Hub
+
+```shell
+docker tag demo:latest rlawnsdud/demo:latest
+docker push rlawnsdud/demo:latest
+docker tag demo:arm rlawnsdud/demo:arm
+docker push rlawnsdud/demo:arm
+```
+
 # Endpoints
 
 - `GET /`
